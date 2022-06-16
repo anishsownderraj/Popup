@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Popup from "./Popup";
+import SignIn from "./SignIn";
 
 class App extends Component{
 
@@ -13,8 +14,9 @@ class App extends Component{
   render() {
     return(
       <div>
+        <SignIn/>
 
-        <Popup />
+        {/* <Popup /> */}
       </div>
     );
   }
