@@ -24,27 +24,28 @@ export default function SignIn() {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
-    
+
     return (
         <main>
             <Box
-                px={{ xs: 3, sm: 10 }}
-                py={{ xs: 5, sm: 10 }}
-                bgcolor="secondary"
+                px={{ xs: 100, sm: 10 }}
+                py={{ xs: 5, sm: 7 }}
+
                 color="white"
+                bgcolor="text.secondary"
                 sx={{
                     justifyContent: "center",
-                    borderRadius: 4,
+                    borderRadius: 5,
                     justify: "center",
-                    bgcolor: "text.disabled",
                     m: 1,
                     p: 1,
                 }}>
                 <div>
                     <Button
+
                         onClick={handleOpen}
                         variant="contained"
-                        size="large"   
+                        size="large"
                     > Join Beta
                     </Button>
                     <Modal
@@ -54,14 +55,14 @@ export default function SignIn() {
                         aria-describedby="modal-modal-description"
                     >
                         <Box sx={style}>
-                            <Form/>
+                            <Form />
                         </Box>
 
                     </Modal>
                 </div>
 
             </Box>
-       </main> 
+       </main>
     );
 
 
